@@ -1,0 +1,23 @@
+{
+  "name": "rydebackendchallenge",
+  "version": "1.0.0",
+  "description": "Technical Backend Challenge for Software Engineer role at Ryde",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pyokang/ryde-backend-challenge.git"
+  },
+  "author": "Kang Pyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pyokang/ryde-backend-challenge/issues"
+  },
+  "homepage": "https://github.com/pyokang/ryde-backend-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
