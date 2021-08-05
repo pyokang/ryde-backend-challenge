@@ -1,10 +1,13 @@
+require("./models/db");
 const express = require("express");
+const path = require("path");
 
-const app = express();
+const router = require("./routes/crud");
 
-// Routes
-app.get("/", (req, res) => {
-  res.send("Home");
+var app = express();
+
+app.listen(3000, () => {
+  console.log("Express server started at port : 3000");
 });
 
-app.listen(3000);
+app.use("/api", router);
