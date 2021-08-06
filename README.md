@@ -1,9 +1,12 @@
 # ryde-backend-challenge
 
 ## This is application written specifically for technical assessment at Ryde.
-### The application uses node js, express js, mongodb for Backend Implementation
-### Unit testing is done with Mocha and Chai
-### Note only backend application is implemented.
+
+######
+The application uses node js, express js, mongodb for Backend Implementation
+Unit testing is done with Mocha and Chai
+Note only backend application is implemented.
+######
 
 To check the functionality of the application,
 
