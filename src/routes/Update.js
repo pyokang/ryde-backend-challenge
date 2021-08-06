@@ -15,7 +15,7 @@ const update = async (req, res) => {
   withDB(async (collection) => {
     // Check if the data we want to update exists in the database
     if ((await collection.countDocuments({ id: userId })) == 0) {
-      return res.status(200).json({ message: "There is no item to update." });
+      return res.status(400).json({ message: "There is no item to update." });
     }
 
     // Locate the data we want to update

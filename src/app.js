@@ -23,3 +23,5 @@ app.put("/api/userinfo/:id", update);
 app.listen(process.env.PORT, () => {
   console.log("Express server started at port :", process.env.PORT);
 });
+
+module.exports = app;

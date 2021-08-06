@@ -3,6 +3,7 @@ const { validate } = require("../components/Validator");
 
 const insert = async (req, res) => {
   const userId = req.body.id;
+
   // Type check object fields if they are of expected data type
   const valid = validate(req.body);
   if (!valid)
@@ -16,9 +17,10 @@ const insert = async (req, res) => {
         .status(400)
         .json({ message: "There already exist entry with the same id." });
     }
+
     const insert = await collection.insertOne(req.body);
     res
-      .status(200)
+      .status(201)
       .json({ message: "Successfully inserted data into database!" });
   });
 };
